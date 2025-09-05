@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import Home from "./screens/Home";
 
 function App() {
   return (
-    <div className="w-screen bg-red-500 h-screen">
-      
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<Home/>} path="/"/>
+      </Routes>
+    </Router>
   );
 }
 
