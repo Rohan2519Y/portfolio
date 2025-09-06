@@ -14,7 +14,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className="sticky top-0 z-50 h-16 shadow flex items-center justify-between px-6
+        <header className="sticky top-0 z-50 h-16 shadow-lg flex items-center justify-between px-6
                        bg-white dark:bg-gray-900">
             <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
                 Rohan Kumar
