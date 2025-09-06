@@ -27,10 +27,10 @@ export default function Header() {
             </nav>
             <div className="hidden md:flex items-center space-x-4">
                 <a
-                    href="/resume.pdf"
+                    href="https://docs.google.com/document/d/1pNh5pbT4JBKhDNcw7AxV0p6-vnRS7faX/export?format=pdf"
                     className="px-3 py-1 rounded bg-blue-600 text-white hover:bg-blue-700
                      dark:bg-blue-500 dark:hover:bg-blue-600">
-                    Download CV
+                    Download Resume
                 </a>
                 <button
                     onClick={toggleDark}
