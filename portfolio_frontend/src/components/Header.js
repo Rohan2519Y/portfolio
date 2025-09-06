@@ -1,8 +1,17 @@
+import { useEffect } from "react";
 export default function Header() {
-    // toggle class on <html> element
     const toggleDark = () => {
         document.documentElement.classList.toggle("dark");
     };
+
+    useEffect(() => {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (prefersDark) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    }, []);
 
     return (
         <header className="sticky top-0 z-50 h-16 shadow flex items-center justify-between px-6
